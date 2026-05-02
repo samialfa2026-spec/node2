@@ -6,7 +6,7 @@ WORKDIR /app
 FROM node:20-alpine
 
 # تثبيت Supervisor و wget و curl و tar و libcap (لـ bitpingd)
-RUN apk add --no-cache supervisor wget curl tar libcap
+RUN apk add --no-cache supervisor wget curl tar libcap bash
 
 # إنشاء مجلدات العمل
 WORKDIR /app
